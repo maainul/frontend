@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+  state = {
+    employees: []
+  };
 
+  async componentDidMount() {
+    const response = await fetch('/employees');
+    const body = await response.json();
+    this.setState({employees: body});
+  }
+
+  render() {
+    const {employees} = this.state;
+    return (
+        <div className="App">
+          <header className="App-header">
+            <div className="App-intro">
+              <h2>employees</h2>
+              {employees.map(employee =>
+                  <div key={employee.id}>
+                    {employee.firstName} ({employee.lastName})
+                  </div>
+              )}
+            </div>
+          </header>
+        </div>
+    );
+  }
+}
 export default App;
