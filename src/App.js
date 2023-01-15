@@ -1,33 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import Dashboard from "./pages/dashboard";
+import CreateEmployee from "./pages/form/employee/CreateEmployee";
 
-class App extends Component {
-  state = {
-    employees: []
-  };
-
-  async componentDidMount() {
-    const response = await fetch('/employees');
-    const body = await response.json();
-    this.setState({employees: body});
-  }
-
-  render() {
-    const {employees} = this.state;
-    return (
-        <div className="App">
-          <header className="App-header">
-            <div className="App-intro">
-              <h2>employees</h2>
-              {employees.map(employee =>
-                  <div key={employee.id}>
-                    {employee.firstName} ({employee.lastName})
-                  </div>
-              )}
-            </div>
-          </header>
-        </div>
-    );
-  }
+function App() {
+  return (
+    <div className="app">
+      <Header />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/create" element={<CreateEmployee />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
-export default App;

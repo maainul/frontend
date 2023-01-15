@@ -1,0 +1,12 @@
+1. How to add bootstrap theme.
+2. Best way to create Api menue/Navbr/Route
+3. Send Form Data with Validation.
+4. Save Data and Redirect other link
+5. Modal Form Save data with validation.
+3. List (Table) Normal Table data.
+6. Update data with another form.
+7. update data in the modal.
+8. delete data with redirect details page
+9. delete data with same page with modal appear.
+4. List Data With Pagination Normal.
+5. List Data with Pagination millions of data.
