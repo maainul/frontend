@@ -1,12 +1,19 @@
 1. How to add bootstrap theme.
-2. Best way to create Api menue/Navbr/Route
-3. Send Form Data with Validation.
-4. Save Data and Redirect other link
-5. Modal Form Save data with validation.
-3. List (Table) Normal Table data.
-6. Update data with another form.
-7. update data in the modal.
-8. delete data with redirect details page
-9. delete data with same page with modal appear.
-4. List Data With Pagination Normal.
-5. List Data with Pagination millions of data.
+    Follow this link : 
+        https://www.youtube.com/watch?v=NK5Q8vjxxlM&t=129s&ab_channel=APPWRKITSolutions
+        https://appwrk.com/how-to-integrate-bootstrap-theme-in-react-application
+
+2. React Folder/ code structure
+
+3. Best way to create Api menue/Navbr/Route
+
+4. Send Form Data with Validation.
+5. Save Data and Redirect other link
+6. Modal Form Save data with validation.
+7. List (Table) Normal Table data.
+8. Update data with another form.
+9. update data in the modal.
+10. delete data with redirect details page
+11. delete data with same page with modal appear.
+12. List Data With Pagination Normal.
+13. List Data with Pagination millions of data.
