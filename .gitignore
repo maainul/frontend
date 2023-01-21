@@ -1,6 +1,7 @@
 #Dependencies
-node_modules
+/node_moules copy
 package-lock.json
+
 
 
 npm-debug.log*
