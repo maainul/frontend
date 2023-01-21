@@ -4,7 +4,8 @@ import Header from "./layouts/Header";
 import Dashboard from "./pages/dashboard";
 import Footer from "./layouts/Footer";
 import NotFound from "./layouts/NotFound";
-import { EmployeeRoute } from "./features/employees/layout/Routes/EmployeeRoute";
+import { EmployeeRoutes } from "./features/employees/layout/Routes/EmployeeRoutes";
+import DepartmentRoutes from "./features/department/layout/Routes/DepartmentRoutes";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         {/* ONLY EMPLOYEE ROUTE ; GO TO features/employees/layout/EmployeeRoute.js */}
-        <Route path="/employees/*" element={<EmployeeRoute />}></Route> 
+        <Route path="/employees/*" element={<EmployeeRoutes />}></Route>
+        {/* ONLY DEPARTMENT ROUTE ; GO TO features/department/layout/DepartmentRoute.js */}
+        <Route path="/departments/*" element={<DepartmentRoutes />}></Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
