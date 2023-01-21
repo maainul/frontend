@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -29,16 +29,16 @@ function NavBar() {
               data-bs-parent="#sidebar-nav"
             >
               <li>
-                <Link to="/employees/create">
+                <NavLink to="/employees/create">
                   <i className="bi bi-circle"></i>
                   <span>New Employee</span>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/employees">
+                <NavLink to="/employees">
                   <i className="bi bi-circle"></i>
                   <span>Employee List</span>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
