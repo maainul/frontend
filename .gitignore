@@ -1,6 +1,5 @@
 #Dependencies
-/node_moules copy
-package-lock.json
+node_modules
 
 
 
