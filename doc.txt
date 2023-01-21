@@ -1,9 +1,9 @@
-1. How to add bootstrap theme.
+1. How to add bootstrap theme. (done)
     Follow this link : 
         https://www.youtube.com/watch?v=NK5Q8vjxxlM&t=129s&ab_channel=APPWRKITSolutions
         https://appwrk.com/how-to-integrate-bootstrap-theme-in-react-application
 
-2. React Folder/ code structure :
+2. React Folder/ code structure : (done)
     https://www.youtube.com/watch?v=UUga4-z7b6s&ab_channel=WebDevSimplified
     
 3. Best way to create Api menue/Navbr/Route
